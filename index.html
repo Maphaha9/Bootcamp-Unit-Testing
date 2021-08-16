@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Testing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+</head>
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert;
+    </script>
+    <!--testing greet function-->
+    <script src="greet.js" charset="utf-8"></script>
+    <script src="greet-test.js" charset="utf-8"></script>
+    <!--testing isFromBellive-->
+    <script src="iFrom.js" charset="utf-8"></script>
+    <script src="isFrom-test.js" charset="utf-8"></script>
+    <!--testing isWeekday function-->
+    <script src="isweekday.js" charset="utf-8"></script>
+    <script src="isweekday-test.js" charset="utf-8"></script>
+    <!--testing regcheck function-->
+    <script src="regCheck.js" charset="utf-8"></script>
+    <script src="regCheck-test.js" charset="utf-8"></script>
+    <!--testing countRegNumber-->
+    <script src="countReg.js" charset="utf-8"></script>
+    <script src="countReg-test.js" charset="utf-8"></script>
+    <!--testing yearsAgo-->
+    <script src="yearsAgo.js" charset="utf-8"></script>
+    <script src="yearsAgo-test.js" charset="utf-8"></script>
+    <!--testing countAllPaarl-->
+    <script src="countAllPaarl.js" charset="utf-8"></script>
+    <script src="countAllPaarl-test.js" charset="utf-8"></script>
+    <!--testing countAllFromTown-->
+    <script src="countAllFromTown.js" charset="utf-8"></script>
+    <script src="countAllFromTown-test.js" charset="utf-8"></script>
+    <!--testing transportFee-->
+    <script src="transportFee.js" charset="utf-8"></script>
+    <script src="transportFee-test.js" charset="utf-8"></script>
+    <!--testing totalPhoneBill-->
+    <script src="totalPhoneBill.js" charset="utf-8"></script>
+    <script src="totalPhoneBill-test.js" charset="utf-8"></script>
+    <!--testing fromWhere-->
+    <script src="fromWhere.js" charset="utf-8"></script>
+    <script src="fromWhere-test.js" charset="utf-8"></script>
+    <!--testing findItemsOver20-->
+    <script src="findItemOver20.js" charset="utf-8"></script>
+    <script src="findItemOver20-test.js" charset="utf-8"></script>
+    <!--testing findItemsOver-->
+    <script src="findItemOver.js" charset="utf-8"></script>
+    <script src="findItemOver-test.js" charset="utf-8"></script>
+    <!--testing mostProfitableDepartment-->
+    <script src="mostProfitableDepartment.js" charset="utf-8"></script>
+    <script src="mostProfitableDepartment-test.js" charset="utf-8"></script>
+    <script>
+        //configure nd run mocha
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+</html>
